@@ -1,10 +1,8 @@
 radio.onReceivedValue(function (name, value) {
     if (value == 1) {
-        servos.P0.setAngle(90)
+        servos.P0.setAngle(0)
         basic.pause(500)
-        servos.P0.setAngle(135)
-    } else {
-    	
+        servos.P0.setAngle(180)
     }
 })
 radio.setGroup(11)
